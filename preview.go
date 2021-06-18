@@ -14,7 +14,7 @@ import (
 	"strconv"
 
 	"github.com/disintegration/imaging"
-	"github.com/xbsoftware/wfs"
+	"github.com/lVeliarl/wfs"
 )
 
 func getIconURL(size, ftype, name string) string {

@@ -16,8 +16,8 @@ import (
 	"github.com/rwcarlsen/goexif/tiff"
 	"github.com/unrolled/render"
 
-	"github.com/xbsoftware/wfs"
-	local "github.com/xbsoftware/wfs-local"
+	"github.com/lVeliarl/wfs"
+	local "github.com/lVeliarl/wfs-local"
 )
 
 var format = render.New()
@@ -165,6 +165,7 @@ func main() {
 			Nested:     true,
 			SubFolders: true,
 			SkipFiles:  true,
+			Dynamic:    true,
 			Exclude:    func(name string) bool { return strings.HasPrefix(name, ".") },
 		})
 
